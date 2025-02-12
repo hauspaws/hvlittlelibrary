@@ -36,6 +36,11 @@
             text-decoration: none;
             font-weight: bold;
         }
+        a:focus, a:hover {
+            background-color: #FFD54F;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
         .social-section {
             margin-top: 20px;
         }
@@ -54,6 +59,11 @@
         }
         .social-icons img:hover {
             transform: scale(1.1);
+        }
+        /* Remove bullet points from lists */
+        .no-bullets {
+            list-style-type: none;
+            padding: 0;
         }
         /* Responsive adjustments */
         @media (max-width: 768px) {
@@ -108,33 +118,17 @@
         <p><a href="https://YOUR_GOOGLE_REVIEW_LINK" target="_blank">Read or Leave a Google Review</a></p>
         
         <h3>📰 Media Mentions</h3>
-        <ul>
-            <li><a href="https://www.zaobao.com.sg/forum/talk/story20221028-1327205" target="_blank">Zao Bao Online 28 October 2022</a></li>
-            <li><a href="https://www.facebook.com/100084814476979/posts/pfbid0Aycfg4t7LNE5zkCZcr2cosm8dnTv25XMina12HRgLMCQZucSzvxU3JXgEgG5cJcxl/?mibextid=SDPelY" target="_blank">English Translation Zao Bao Online 28 October 2022</a></li>
-            <li><a href="https://heyzine.com/flip-book/14cc43355c.html#" target="_blank">Central CDC Singapore Voices Magazine December 2022</a></li>
+        <ul class="no-bullets">
+            <li><a href="https://example.com/article1" target="_blank">Article Title 1 - Publication Name</a></li>
+            <li><a href="https://example.com/article2" target="_blank">Article Title 2 - Publication Name</a></li>
+            <li><a href="https://example.com/article3" target="_blank">Article Title 3 - Publication Name</a></li>
         </ul>
         
         <h3>🏆 Awards</h3>
-        <ul>
+        <ul class="no-bullets">
             <li><a href="https://example.com/award1" target="_blank">Award Title 1 - Organization Name</a></li>
             <li><a href="https://example.com/award2" target="_blank">Award Title 2 - Organization Name</a></li>
-            <li><a href="https://example.com/award3" target="_blank">Award Title 3 - Organization Name</a></li>
         </ul>
-        
-        <h3>📩 Get in Touch</h3>
-        <p>Email: <a href="mailto:hvlittlelibrary@gmail.com">hvlittlelibrary@gmail.com</a></p>
-        
-        <div class="social-section">
-            <h3>📱 Follow Us</h3>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-                </a>
-            </div>
-        </div>
     </div>
     
     <footer>
