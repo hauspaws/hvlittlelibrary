@@ -36,9 +36,10 @@
         .social-icons {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 15px;
             margin-top: 10px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
         .social-icons img {
             width: 40px;
@@ -51,8 +52,7 @@
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .social-icons {
-                flex-direction: column;
-                align-items: center;
+                flex-wrap: wrap;
             }
             .social-icons img {
                 width: 35px;
@@ -91,6 +91,20 @@
         
         <h3>⭐ Community Testimonials</h3>
         <p><a href="https://YOUR_GOOGLE_REVIEW_LINK" target="_blank">Read or Leave a Google Review</a></p>
+        
+        <h3>📰 Media Mentions</h3>
+        <ul>
+            <li><a href="https://example.com/article1" target="_blank">Article Title 1 - Publication Name</a></li>
+            <li><a href="https://example.com/article2" target="_blank">Article Title 2 - Publication Name</a></li>
+            <li><a href="https://example.com/article3" target="_blank">Article Title 3 - Publication Name</a></li>
+        </ul>
+        
+        <h3>🏆 Awards</h3>
+        <ul>
+            <li><a href="https://example.com/award1" target="_blank">Award Title 1 - Organization Name</a></li>
+            <li><a href="https://example.com/award2" target="_blank">Award Title 2 - Organization Name</a></li>
+            <li><a href="https://example.com/award3" target="_blank">Award Title 3 - Organization Name</a></li>
+        </ul>
         
         <h3>📩 Get in Touch</h3>
         <p>Email: <a href="mailto:hvlittlelibrary@gmail.com">hvlittlelibrary@gmail.com</a></p>
