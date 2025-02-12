@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HV Little Library</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -38,6 +39,34 @@
             padding: 20px;
             background-color: #FFA726;
             color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+            .container {
+                padding: 10px;
+            }
+            .social-links a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+                padding: 10px;
+            }
+            .container {
+                padding: 5px;
+            }
+            h2, h3 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
