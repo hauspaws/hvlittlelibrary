@@ -89,14 +89,49 @@
         
         <div class="social-icons">
             <h3>📱 Follow Us</h3>
-            <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-            </a>
-        </div>
-    </div>
+<div class="social-icons">
+    <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    </a>
+</div>
+
+<style>
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons img {
+        width: 40px;  /* Default size */
+        height: 40px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .social-icons img {
+            width: 30px; /* Smaller size for tablets */
+            height: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .social-icons img {
+            width: 25px; /* Even smaller size for phones */
+            height: 25px;
+        }
+    }
+</style>
+
     
     <footer>
         HV Little Library - We Are More Than Just A Library
