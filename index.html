@@ -44,9 +44,6 @@
             border-radius: 5px;
             display: inline-block;
         }
-        .menu-button span {
-            display: inline-block;
-        }
         .menu {
             display: none;
             flex-direction: column;
@@ -129,13 +126,7 @@
     <script>
         function toggleMenu() {
             var menu = document.getElementById('menu');
-            var button = document.getElementById('menu-button-text');
             menu.classList.toggle('show-menu');
-            if (menu.classList.contains('show-menu')) {
-                button.innerHTML = "✖ Close";
-            } else {
-                button.innerHTML = "☰ Menu";
-            }
         }
     </script>
 </head>
@@ -143,9 +134,7 @@
     <header>@HVLittleLibrary</header>
     
     <nav>
-        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">
-            <span id="menu-button-text">☰ Menu</span>
-        </button>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">☰ Menu</button>
         <div id="menu" class="menu">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -164,14 +153,22 @@
             <h2>📖 Welcome to HV Little Library</h2>
             <p>A Ground-Up Movement (GUM) fostering community, kindness, and knowledge-sharing.</p>
         </div>
+        
+        <div class="section">
+            <h3>🚀 Our Vision for the Future</h3>
+            <p>By 2027, HV Little Library will be a thriving community hub, a model for sustainability, learning, and social connection.</p>
+            <p><a href="vision.html" class="button">Read Our Full Vision</a></p>
+        </div>
+        
+        <div class="section">
+            <h3>📸 Our Library in Pictures</h3>
+            <p><a href="gallery.html" class="button">View More Photos</a></p>
+        </div>
     </div>
     
     <footer>
         @HVLittleLibrary <br> We Are More Than Just A Library
         <div class="social-icons">
-            <a href="mailto:hvlittlelibrary@gmail.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
-            </a>
             <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
             </a>
