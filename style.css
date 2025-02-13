@@ -5,7 +5,6 @@ body {
     margin: 0;
     background-color: #FFF8E1;
     color: #333;
-    transition: all 0.3s ease-in-out;
 }
 
 /* Header */
@@ -50,8 +49,7 @@ nav {
 
 /* Menu */
 .menu {
-    max-height: 0;
-    overflow: hidden;
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #FFF8E1;
@@ -64,7 +62,7 @@ nav {
 
 /* Show Menu */
 .menu.show-menu {
-    max-height: 500px;
+    display: flex;
     opacity: 1;
     padding: 20px 0;
 }
@@ -104,24 +102,4 @@ nav {
     top: 10px;
     right: 10px;
     background: none;
-    border: none;
-    color: #FF9800;
-    cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu {
-        width: 100%;
-        position: relative;
-        padding-bottom: 20px;
-    }
-
-    .menu ul {
-        text-align: center;
-    }
-
-    .menu li {
-        padding: 15px 0;
-    }
-}
+   
