@@ -1,105 +1,84 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #FFF8E1;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
 header {
-    background-color: #FF9800;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
+    background-color: #333;
     color: white;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
 
-/* Navigation */
-nav {
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
-/* Menu Button */
-.menu-button, .close-button {
-    background-color: #FF9800;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Hide Close Button Initially */
-.close-button {
-    display: none;
-}
-
-/* Hide Menu Button when Open */
-.menu-button.hide {
-    display: none;
-}
-
-/* Menu */
-.menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #FFF8E1;
-    transition: max-height 0.5s ease-in-out;
-    align-items: center;
-    padding: 0;
-    opacity: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Show Menu */
-.menu.show-menu {
-    display: flex;
-    opacity: 1;
-    padding: 20px 0;
-}
-
-/* Menu Links */
-.menu ul {
-    list-style: none;
-    padding: 0;
+nav ul {
+    list-style-type: none;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-.menu li {
-    padding: 12px 0;
-}
-
-.menu a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: #333;
-    display: block;
-    padding: 12px;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #FF9800;
+nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
-/* Close Button */
-.close-button.show {
-    display: block;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-   
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        width: 100%;
+    }
+}
