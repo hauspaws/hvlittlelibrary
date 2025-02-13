@@ -44,6 +44,9 @@
             border-radius: 5px;
             display: inline-block;
         }
+        .menu-button span {
+            display: inline-block;
+        }
         .menu {
             display: none;
             flex-direction: column;
@@ -116,15 +119,23 @@
         }
         .social-icons a {
             margin: 0 10px;
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
         }
     </style>
     <script>
         function toggleMenu() {
             var menu = document.getElementById('menu');
+            var button = document.getElementById('menu-button-text');
             menu.classList.toggle('show-menu');
+            if (menu.classList.contains('show-menu')) {
+                button.innerHTML = "✖ Close";
+            } else {
+                button.innerHTML = "☰ Menu";
+            }
         }
     </script>
 </head>
@@ -132,7 +143,9 @@
     <header>@HVLittleLibrary</header>
     
     <nav>
-        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">☰ Menu</button>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">
+            <span id="menu-button-text">☰ Menu</span>
+        </button>
         <div id="menu" class="menu">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -167,9 +180,15 @@
     <footer>
         @HVLittleLibrary <br> We Are More Than Just A Library
         <div class="social-icons">
-            <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">📷</a>
-            <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">📘</a>
-            <a href="https://t.me/hvlittlelibrary" target="_blank">📢</a>
+            <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://t.me/hvlittlelibrary" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+            </a>
         </div>
     </footer>
 </body>
