@@ -34,16 +34,22 @@
             width: 100%;
             text-align: center;
         }
-        nav a {
-            margin: 0 15px;
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .menu a {
             text-decoration: none;
             font-weight: bold;
             color: #333;
-            padding: 10px;
+            padding: 10px 15px;
             border-radius: 5px;
+            background-color: #FFF3E0;
             transition: background-color 0.3s ease;
         }
-        nav a:hover, nav a:focus {
+        .menu a:hover, .menu a:focus {
             background-color: #FF9800;
             color: white;
         }
@@ -85,6 +91,12 @@
             width: 100%;
             text-align: center;
             font-weight: bold;
+            line-height: 1.6;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -92,12 +104,17 @@
     <header>@HVLittleLibrary</header>
     
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="library.html">Library</a>
-        <a href="vision.html">Our Vision</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="library.html">Library</a>
+            <a href="vision.html">Our Vision</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="media.html">Media</a>
+            <a href="awards.html">Awards</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
     
     <div class="container">
@@ -118,6 +135,8 @@
         </div>
     </div>
     
-    <footer>@HVLittleLibrary - We Are More Than Just A Library</footer>
+    <footer>
+        @HVLittleLibrary <br> We Are More Than Just A Library
+    </footer>
 </body>
 </html>
