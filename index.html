@@ -4,137 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@HVLittleLibrary</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 0;
-            background-color: #FFF8E1;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #FF9800;
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            position: relative;
-        }
-        .menu-button {
-            background-color: #FF9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .menu {
-            display: none;
-            flex-direction: column;
-            background-color: #FFF8E1;
-            position: absolute;
-            width: 100%;
-            top: 100%;
-            left: 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .menu a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #333;
-            padding: 10px;
-            display: block;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .menu a:hover, .menu a:focus {
-            background-color: #FF9800;
-            color: white;
-        }
-        .show-menu {
-            display: flex;
-        }
-        .button {
-            display: inline-block;
-            background-color: #FF9800;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .button:hover {
-            background-color: #E68900;
-        }
-        .container {
-            max-width: 800px;
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px 0;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #FF9800;
-            color: white;
-            width: 100%;
-            text-align: center;
-            font-weight: bold;
-            line-height: 1.6;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-        }
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-        }
-    </style>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            menu.classList.toggle('show-menu');
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>@HVLittleLibrary</header>
-    
+    <header>
+        <h1>@HVLittleLibrary</h1>
+    </header>
+
     <nav>
-        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle Menu">☰ Menu</button>
+        <button class="menu-button" aria-label="Toggle Menu">☰ Menu</button>
         <div id="menu" class="menu">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -147,7 +26,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
-    
+
     <div class="container">
         <div class="section">
             <h2>📖 Welcome to HV Little Library</h2>
@@ -165,18 +44,18 @@
             <p><a href="gallery.html" class="button">View More Photos</a></p>
         </div>
     </div>
-    
+
     <footer>
         @HVLittleLibrary <br> We Are More Than Just A Library
         <div class="social-icons">
             <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                <img src="images/instagram.svg" alt="Instagram" width="30" height="30" loading="lazy">
             </a>
             <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                <img src="images/facebook.svg" alt="Facebook" width="30" height="30" loading="lazy">
             </a>
             <a href="https://t.me/hvlittlelibrary" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                <img src="images/telegram.svg" alt="Telegram" width="30" height="30" loading="lazy">
             </a>
         </div>
     </footer>
