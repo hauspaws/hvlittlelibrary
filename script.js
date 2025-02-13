@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".menu-button");
-    const closeButton = document.querySelector(".close-button");
+    const menuButton = document.getElementById("menuButton");
+    const closeButton = document.getElementById("closeButton");
     const menu = document.getElementById("menu");
 
     function toggleMenu() {
