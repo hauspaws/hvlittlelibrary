@@ -51,18 +51,22 @@ nav {
 .menu {
     display: none;
     flex-direction: column;
-    background-color: #FFF8E1;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    top: 60px;
+    height: 100vh;
+    top: 0;
     left: 0;
+    background-color: rgba(255, 248, 225, 0.95); /* Slightly darker for contrast */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    transition: opacity 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Show Menu */
 .menu.show-menu {
     display: flex;
+    opacity: 1;
 }
 
 /* Menu Links */
@@ -73,79 +77,40 @@ nav {
 }
 
 .menu li {
-    padding: 12px;
+    padding: 15px;
 }
 
 .menu a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
     color: #333;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    background-color: #FF9800;
-    color: white;
+    color: #FF9800;
 }
 
-/* Buttons */
-.button {
-    display: inline-block;
-    background-color: #FF9800;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+/* Close Button */
+.close-button.show {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #FF9800;
+    cursor: pointer;
 }
 
-.button:hover {
-    background-color: #E68900;
-}
-
-/* Container */
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Section */
-.section {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    background-color: #FF9800;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Mobile Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .menu {
         width: 100%;
-        height: auto;
+        height: 100vh;
+        justify-content: center;
     }
 
     .menu ul {
@@ -153,6 +118,6 @@ footer {
     }
 
     .menu li {
-        padding: 15px;
+        padding: 20px;
     }
 }
