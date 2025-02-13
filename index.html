@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@HVLittleLibrary</title>
+    <title>@HVLittleLibrary - We Are More Than A Library</title>
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
-            background-color: #FAFAFA;
+            background-color: #FFF8E1;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -19,12 +19,33 @@
             min-height: 100vh;
         }
         header {
-            background-color: #FFA726;
+            background-color: #FF9800;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
             color: white;
             width: 100%;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #FFD180;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #FF9800;
+            color: white;
         }
         .container {
             max-width: 800px;
@@ -38,122 +59,65 @@
             justify-content: center;
         }
         a {
-            color: #42A5F5;
+            color: #FF9800;
             text-decoration: none;
             font-weight: bold;
         }
-        a:focus, a:hover {
-            background-color: #FFD54F;
+        a:hover, a:focus {
+            text-decoration: underline;
+            background-color: #FFD180;
             padding: 2px 5px;
             border-radius: 5px;
         }
-        .social-section {
-            margin-top: 20px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-top: 10px;
-            flex-wrap: nowrap;
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
-        /* Remove bullet points from lists */
-        .no-bullets {
-            list-style-type: none;
-            padding: 0;
-        }
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 10px;
-            }
-            .social-icons {
-                flex-wrap: wrap;
-            }
-            .social-icons img {
-                width: 35px;
-                height: 35px;
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                width: 100%;
-                padding: 10px;
-            }
-            .social-icons img {
-                width: 30px;
-                height: 30px;
-            }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             margin-top: 30px;
             padding: 20px;
-            background-color: #FFA726;
+            background-color: #FF9800;
             color: white;
             width: 100%;
-            position: relative;
-            bottom: 0;
-            left: 0;
             text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        @HVLittleLibrary
-    </header>
+    <header>@HVLittleLibrary - We Are More Than A Library</header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="library.html">Library</a>
+        <a href="vision.html">Our Vision</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     
     <div class="container">
-        <h2>Welcome to HV Little Library!</h2>
-        <p>A Ground-Up Movement (GUM) By Residents, For Residents. We are more than just a library!</p>
+        <div class="section">
+            <h2>📖 Welcome to HV Little Library</h2>
+            <p>A Ground-Up Movement (GUM) fostering community, kindness, and knowledge-sharing.</p>
+        </div>
         
-        <h3>📸 Our Library in Pictures</h3>
-        <p><a href="https://photos.app.goo.gl/YOUR_ALBUM_LINK" target="_blank">View our photo album</a></p>
+        <div class="section">
+            <h3>🚀 Our Vision for the Future</h3>
+            <p>By 2027, HV Little Library will be a thriving community hub, a model for sustainability, learning, and social connection.</p>
+            <p><a href="vision.html">Read Our Full Vision</a></p>
+        </div>
         
-        <h3>⭐ Community Testimonials</h3>
-        <p><a href="https://YOUR_GOOGLE_REVIEW_LINK" target="_blank">Read or Leave a Google Review</a></p>
-        
-        <h3>📰 Media Mentions</h3>
-        <ul class="no-bullets">
-            <li><a href="https://example.com/article1" target="_blank">Article Title 1 - Publication Name</a></li>
-            <li><a href="https://example.com/article2" target="_blank">Article Title 2 - Publication Name</a></li>
-            <li><a href="https://example.com/article3" target="_blank">Article Title 3 - Publication Name</a></li>
-        </ul>
-        
-        <h3>🏆 Awards</h3>
-        <ul class="no-bullets">
-            <li><a href="https://example.com/award1" target="_blank">Award Title 1 - Organization Name</a></li>
-            <li><a href="https://example.com/award2" target="_blank">Award Title 2 - Organization Name</a></li>
-        </ul>
-        
-        <h3>📩 Get in Touch</h3>
-        <p>Email: <a href="mailto:hvlittlelibrary@gmail.com">hvlittlelibrary@gmail.com</a></p>
-        
-        <div class="social-section">
-            <h3>📱 Follow Us</h3>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/hvlittlelibrary" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/hvlittlelibrary" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-                </a>
-            </div>
+        <div class="section">
+            <h3>📸 Our Library in Pictures</h3>
+            <p><a href="gallery.html">View More Photos</a></p>
         </div>
     </div>
     
-    <footer>
-        @HVLittleLibrary - We Are More Than Just A Library
-    </footer>
+    <footer>@HVLittleLibrary - We Are More Than A Library</footer>
 </body>
 </html>
