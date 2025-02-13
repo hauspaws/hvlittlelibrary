@@ -29,29 +29,45 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #FFD180;
             padding: 10px;
             width: 100%;
             text-align: center;
+            position: relative;
+        }
+        .menu-button {
+            background-color: #FF9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
         }
         .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+            display: none;
+            flex-direction: column;
+            background-color: #FFF8E1;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .menu a {
             text-decoration: none;
             font-weight: bold;
             color: #333;
-            padding: 10px 15px;
+            padding: 10px;
+            display: block;
             border-radius: 5px;
-            background-color: #FFF3E0;
             transition: background-color 0.3s ease;
         }
         .menu a:hover, .menu a:focus {
             background-color: #FF9800;
             color: white;
+        }
+        .show-menu {
+            display: flex;
         }
         .container {
             max-width: 800px;
@@ -63,17 +79,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        a {
-            color: #FF9800;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover, a:focus {
-            text-decoration: underline;
-            background-color: #FFD180;
-            padding: 2px 5px;
-            border-radius: 5px;
         }
         .section {
             background: white;
@@ -93,18 +98,20 @@
             font-weight: bold;
             line-height: 1.6;
         }
-        @media (max-width: 600px) {
-            .menu {
-                flex-direction: column;
-            }
-        }
     </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
 </head>
 <body>
     <header>@HVLittleLibrary</header>
     
     <nav>
-        <div class="menu">
+        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menu" class="menu">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="library.html">Library</a>
