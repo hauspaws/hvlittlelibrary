@@ -43,6 +43,10 @@ nav {
     display: inline-block;
 }
 
+.menu-button.hide {
+    display: none;
+}
+
 .menu {
     display: none;
     flex-direction: column;
@@ -74,7 +78,7 @@ nav {
     display: flex;
 }
 
-/* X Close button */
+/* X Close button replaces menu button */
 .close-button {
     background-color: transparent;
     color: #FF9800;
@@ -83,6 +87,11 @@ nav {
     cursor: pointer;
     padding: 10px;
     align-self: flex-end;
+    display: none;
+}
+
+.close-button.show {
+    display: inline-block;
 }
 
 .close-button:hover {
