@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #FFF8E1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #FF9800;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.menu-button {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #FFF8E1;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: #FF9800;
+    color: white;
+}
+
+.show-menu {
+    display: flex;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #FF9800;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #E68900;
+}
+
+/* Content */
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #FF9800;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
