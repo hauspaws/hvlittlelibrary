@@ -11,10 +11,9 @@ body {
 header {
     background-color: #FF9800;
     padding: 20px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
-    width: 100%;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -32,11 +31,10 @@ nav {
     background-color: #FF9800;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    display: inline-block;
 }
 
 /* Hide Close Button Initially */
@@ -51,9 +49,7 @@ nav {
 
 /* Menu */
 .menu {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
+    display: none;
     flex-direction: column;
     background-color: #FFF8E1;
     position: absolute;
@@ -61,37 +57,73 @@ nav {
     top: 60px;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 /* Show Menu */
 .menu.show-menu {
-    max-height: 400px;
-    opacity: 1;
+    display: flex;
 }
 
 /* Menu Links */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 12px;
+}
+
 .menu a {
     text-decoration: none;
     font-weight: bold;
     color: #333;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
-.menu a:hover, .menu a:focus {
+.menu a:hover {
     background-color: #FF9800;
     color: white;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #FF9800;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #E68900;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section */
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-    margin-top: 30px;
-    padding: 20px;
     background-color: #FF9800;
     color: white;
-    width: 100%;
+    padding: 20px;
     text-align: center;
 }
 
@@ -107,4 +139,20 @@ footer {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 15px;
+    }
 }
