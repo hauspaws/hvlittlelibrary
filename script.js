@@ -19,12 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
+
+            console.log("Target:", target); // Debugging line
+
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
                 // Close menu after clicking
                 navMenu.classList.remove('active');
+            } else {
+                console.error("Target section not found!");
             }
         });
     });
